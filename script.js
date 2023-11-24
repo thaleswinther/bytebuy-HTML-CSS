@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p class="card-text">${product.description}</p>
                 <p class="card-text">Price: $${product.price}</p>
               </div>
+              <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
             </div>
           `;
           row.appendChild(productCard);

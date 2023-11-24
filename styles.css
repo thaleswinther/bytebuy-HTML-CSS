@@ -54,6 +54,14 @@ body {
    text-overflow: ellipsis;
   }
 
+  .card .card-body .card-text {
+    max-height: 6rem; /* Ajuste a altura máxima conforme necessário */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
   form {
     display: flex;
     flex-direction: column;

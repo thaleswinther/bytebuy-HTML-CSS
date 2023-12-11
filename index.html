@@ -51,11 +51,25 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
+    <section id="localizacao">
+      <h2>Onde Estamos Localizados</h2>
+      <div id="map" style="height: 400px;"></div>
+    </section>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="map.js"></script>
   <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="config.js"></script>
+  <script>
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
+    document.head.appendChild(script);
+  </script>
+
 </body>
 </html>

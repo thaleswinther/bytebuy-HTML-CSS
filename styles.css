@@ -1,12 +1,11 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
   }
   
   header {
-    background-color: #333;
-    color: white;
+    background-color: #000;
     padding: 0;
   }
   
@@ -66,6 +65,23 @@ body {
     height: 68px;
     margin-top: -10px;
     margin-bottom: -10px;
+  }
+
+  .shopping-bag-icon {
+    width: 30px; 
+    height: 30px; 
+    margin-top: -6px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  #banner {
+    background: url('resources/static/image/banner_bytebuy.png') no-repeat center center/contain;
+    background-color: #000;
+    height: 400px; 
+    width: 100%;
   }
   
   form {

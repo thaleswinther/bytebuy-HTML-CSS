@@ -172,6 +172,14 @@
     margin-top: 36px;
   }
 
+  #localizacao h2 {
+    margin-left: 190px;
+  }
+  #map {
+    width: 80%; /* Diminui a largura do mapa para 80% da largura do contêiner pai */
+    margin: auto; /* Centraliza o mapa */
+  }
+
   form {
     display: flex;
     flex-direction: column;

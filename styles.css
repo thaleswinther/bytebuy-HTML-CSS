@@ -48,6 +48,7 @@
   .footer-content img {
     width: 139px;
     height: 68px;
+    cursor: pointer;
   }
 
   footer .col p {
@@ -57,12 +58,14 @@
   .footer-content .pin {
     width: 20px; 
     height: 20px; 
+    cursor: pointer;
   }
 
   .footer-content .social-icon {
     width: 20px;
     height: 20px;
     margin-bottom: 5px;
+    cursor: pointer;
   }
 
   .footer-content .col{

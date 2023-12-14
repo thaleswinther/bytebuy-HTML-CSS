@@ -193,7 +193,17 @@
     height: 100px;
   }
   
+
   button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .submit-button {
     margin-top: 20px;
     padding: 10px;
     width: 110px; 

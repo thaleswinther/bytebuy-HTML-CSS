@@ -179,15 +179,6 @@ footer .col p {
   height: 400px;
   width: 100%;
 }
-
-#departament {
-  background: url('resources/static/image/departament_image.png') no-repeat center center/contain;
-  background-color: white;
-  height: 1000px;
-  width: 100%;
-  cursor: pointer;
-}
-
 #contact-banner {
   background-color: #6874E8;
   color: white;

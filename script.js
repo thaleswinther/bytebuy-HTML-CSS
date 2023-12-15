@@ -2,7 +2,7 @@ fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
   .then((data) => {
     const carouselInner = document.getElementById("carousel-inner");
-    const itensPorLinha = 5;
+    const itensPorLinha = 4;
     for (let i = 0; i < data.length; i += itensPorLinha) {
       let carouselItem = document.createElement("div");
       carouselItem.className = `carousel-item ${i === 0 ? "active" : ""}`;

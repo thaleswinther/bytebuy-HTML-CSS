@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('section').forEach(section => {
         const id = section.getAttribute('id');
-        if (id !== 'banner' && id !== 'productCarousel' && id !== 'footer') {
+        if (id !== 'banner' && id !== 'productCarousel' && id !== 'footer' && id !== 'banners') {
             section.style.display = 'none';
         }
     });
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             document.getElementById('banner').style.display = 'block';
             document.getElementById('productCarousel').style.display = 'block';
+            document.getElementById('banners').style.display = 'block';
             
             const target = this.getAttribute('href').substring(1); 
             document.getElementById(target).style.display = 'block';
@@ -26,12 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('localizacao').style.display = 'block';
                 document.getElementById('productCarousel').style.display = 'none';
                 document.getElementById('banner').style.display = 'none';
+                document.getElementById('banners').style.display = 'none';
             }
             if (target === 'localizacao') {
                 document.getElementById('formulario').style.display = 'block';
                 document.getElementById('localizacao').scrollIntoView();
                 document.getElementById('productCarousel').style.display = 'none';
                 document.getElementById('banner').style.display = 'none';
+                document.getElementById('banners').style.display = 'none';
             }
         });
     });

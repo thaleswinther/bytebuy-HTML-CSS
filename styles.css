@@ -180,7 +180,7 @@ footer .col p {
   padding: 139px;
   text-align: center;
   width: 100%;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 60px;
 }
 
@@ -218,14 +218,12 @@ footer .col p {
 }
 
 #localizacao h2 {
-  margin-left: 190px;
+  margin-left: 50px;
 }
 
 #map {
-  width: 80%;
-  /* Diminui a largura do mapa para 80% da largura do contêiner pai */
+  width: 95%;
   margin: auto;
-  /* Centraliza o mapa */
 }
 
 form {

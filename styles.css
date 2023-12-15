@@ -1,218 +1,250 @@
-  body {
-      font-family: 'Arial', sans-serif;
-      position: relative;
-      margin: 0;
-      padding: 0;
-      padding-bottom: 100px;
-  }
-  
-  header {
-    background-color: #000;
-    padding: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-
-  footer {
-    background-color: #000;
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    color: #fff;
-  }
-  .footer-content {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .footer-content img {
-    width: 139px;
-    height: 68px;
-    cursor: pointer;
-  }
-
-  footer .col p {
-    margin-bottom: 8px; 
-  }
-
-  .footer-content .pin {
-    width: 20px; 
-    height: 20px; 
-    cursor: pointer;
-  }
-
-  .footer-content .social-icon {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 5px;
-    cursor: pointer;
-  }
-
-  .footer-content .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
- 
+@media (max-width: 768px) {
   .card {
-    height: 35em;
-    width: 20em;
-  }
-
-  .card img {
-    object-fit: contain;
-    max-height: 30%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-  }
-
-  .card .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card .card-body .card-title {
-   height: 3rem;
-   overflow: hidden;
-   text-overflow: ellipsis;
-  }
-
-  .card .card-body .card-text {
-    max-height: 6rem; /* Ajuste a altura máxima conforme necessário */
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  .navbar-brand img {
-    width: 139px;
-    height: 68px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-
-  .shopping-bag-icon {
-    width: 30px; 
-    height: 30px; 
-    margin-top: -6px;
-  }
-
-  .nav-link {
-    color: white;
-  }
-
-  #banner {
-    background: url('resources/static/image/banner_bytebuy.png') no-repeat center center/contain;
-    background-color: #000;
-    height: 400px; 
     width: 100%;
   }
 
-  #contact-banner {
-    background-color: #6874E8; 
-    color: white; 
-    padding: 139px; 
-    text-align: center; 
-    width: 100%;
-    margin-top: -20px;
-    margin-bottom: 60px;
-  }
-
-  #contact-banner h1 {
-    font-size: 2em; 
-    margin-bottom: 10px; 
-    font-weight: bold;
-  }
-
-  #contact-banner p {
-    font-size: 1.2em; 
-  }
-
-
-  .form-control {
-    border-radius: 12px; 
-    border-width: 3px; 
-    border-color: black; 
-    height: 50px;
-  }
-
-  .phone-input {
-    background-image: url('resources/static/image/brazil_flag.svg');
-    background-position: 10px center; 
-    background-repeat: no-repeat; 
-    padding-left: 50px; 
-  }
-
-  .form-control-message {
-    border-radius: 12px; 
-    border-width: 3px; 
-    border-color: black; 
-    height: 252px;
-    margin-top: 36px;
-  }
-
-  #localizacao h2 {
-    margin-left: 190px;
-  }
-  #map {
-    width: 80%; /* Diminui a largura do mapa para 80% da largura do contêiner pai */
-    margin: auto; /* Centraliza o mapa */
-  }
-
-  form {
-    display: flex;
+  .carousel-item .d-flex {
     flex-direction: column;
   }
 
-  label {
-    margin-top: 10px;
+  .footer-content {
+    flex-direction: column;
   }
-  
-  textarea {
-    height: 100px;
-  }
-  
+}
 
-  button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 50%;
   }
+}
 
-  .submit-button {
-    margin-top: 20px;
-    padding: 10px;
-    width: 110px; 
-    height: 62px;
-    background-color: #6874E8; 
-    color: white;
-    border: none;
-    cursor: pointer;
-    align-self: flex-end;
-    border-radius: 25px;
-  }
-  
+body {
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+header {
+  background-color: #000;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #000;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content img {
+  width: 139px;
+  height: 68px;
+  cursor: pointer;
+}
+
+footer .col p {
+  margin-bottom: 8px;
+}
+
+.footer-content .pin {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.footer-content .social-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-content .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card {
+  height: 35em;
+  width: 20em;
+}
+
+.card img {
+  object-fit: contain;
+  max-height: 30%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .card-body .card-title {
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .card-body .card-text {
+  max-height: 5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.navbar-brand img {
+  width: 139px;
+  height: 68px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.shopping-bag-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: -6px;
+}
+
+.nav-link {
+  color: white;
+}
+
+#banner {
+  background: url('resources/static/image/banner_bytebuy.png') no-repeat center center/contain;
+  background-color: #000;
+  height: 400px;
+  width: 100%;
+}
+
+#contact-banner {
+  background-color: #6874E8;
+  color: white;
+  padding: 139px;
+  text-align: center;
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+#contact-banner h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact-banner p {
+  font-size: 1.2em;
+}
+
+
+.form-control {
+  border-radius: 12px;
+  border-width: 3px;
+  border-color: black;
+  height: 50px;
+}
+
+.phone-input {
+  background-image: url('resources/static/image/brazil_flag.svg');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.form-control-message {
+  border-radius: 12px;
+  border-width: 3px;
+  border-color: black;
+  height: 252px;
+  margin-top: 36px;
+}
+
+#localizacao h2 {
+  margin-left: 190px;
+}
+
+#map {
+  width: 80%;
+  /* Diminui a largura do mapa para 80% da largura do contêiner pai */
+  margin: auto;
+  /* Centraliza o mapa */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 110px;
+  height: 62px;
+  background-color: #6874E8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 25px;
+}
+
+.carousel-item .d-flex {
+  justify-content: space-around;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(216deg) brightness(103%) contrast(101%);
+} */

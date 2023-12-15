@@ -1,39 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://fakestoreapi.com/products')
-      .then(response => response.json())
-      .then(products => {
-        const productList = document.getElementById('product-list');
-        let row;
-  
-        products.forEach((product, index) => {
-          if (index % 3 === 0) {
-            row = document.createElement('div');
-            row.classList.add('row');
-            productList.appendChild(row);
-          }
-  
-          const productCard = document.createElement('div');
-          productCard.classList.add('col-md-4', 'mb-4', 'product-card');
-          productCard.innerHTML = `
-            <div class="card">
-              <img src="${product.image}" class="card-img-top" alt="${product.title}">
-              <div class="card-body">
-                <h5 class="card-title">${product.title}</h5>
-                <p class="card-text">${product.description}</p>
-                <p class="card-text">Price: $${product.price}</p>
-              </div>
-              <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
-            </div>
-          `;
-          row.appendChild(productCard);
-        });
-      });
-  
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      alert('Formulário enviado com sucesso!');
-      contactForm.reset();
-    });
+fetch("https://fakestoreapi.com/products")
+  .then((res) => res.json())
+  .then((data) => {
+    const carouselInner = document.getElementById("carousel-inner");
+    const itensPorLinha = 5;
+    for (let i = 0; i < data.length; i += itensPorLinha) {
+      let carouselItem = document.createElement("div");
+      carouselItem.className = `carousel-item ${i === 0 ? "active" : ""}`;
+
+      const container = document.createElement("div");
+      container.className = "d-flex";
+
+      for (let j = i; j < i + itensPorLinha; j++) {
+        if (data[j]) {
+          const product = data[j];
+          const card = document.createElement("div");
+          card.className = "card";
+          card.classList.add('mb-4', 'mt-4')
+          card.innerHTML = `
+                    <div class="card">
+                    <img src="${product.image}" class="card-img-top" alt="${product.title}">
+                    <div class="card-body">
+                      <h5 class="card-title">${product.title}</h5>
+                      <p class="card-text">${product.description}</p>
+                      <p class="card-text">Preço: $${product.price}</p>
+                      <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
+                    </div>
+                  </div>
+                    `;
+          container.appendChild(card);
+        }
+      }
+      carouselItem.appendChild(container);
+      carouselInner.appendChild(carouselItem);
+    }
   });
-  

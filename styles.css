@@ -119,8 +119,10 @@ footer .col p {
 }
 
 .card {
-  height: 35em;
+  height: 30em;
   width: 20em;
+  border-radius: 15px; 
+  border: 1px solid #6874E8;
 }
 
 .card img {
@@ -148,6 +150,10 @@ footer .col p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.btn-primary {
+  background-color: #6874E8;
 }
 
 .navbar-brand img {
@@ -206,16 +212,12 @@ footer .col p {
   width: 95%; 
   height: 300px; 
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 5px;
   margin-left: 26px;
   cursor: pointer;
 }
-
-
-
-
 
 .form-control {
   border-radius: 12px;
@@ -259,15 +261,6 @@ label {
 
 textarea {
   height: 100px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
 .submit-button {

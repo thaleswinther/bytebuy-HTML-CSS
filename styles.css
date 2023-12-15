@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   .card {
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .carousel-item .d-flex {
@@ -13,10 +14,32 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-inner .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .card {
-    width: 50%;
+    width: 45%;
+    margin-bottom: 10px;
   }
 }
+
+/*Telas grandes*/
+@media (min-width: 1025px) {
+  .carousel-inner .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
 
 body {
   font-family: 'Arial', sans-serif;
